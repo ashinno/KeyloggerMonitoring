@@ -1,0 +1,9 @@
+{
+  "name": "Keystroke Biometrics Lab",
+  "description": "A sophisticated typing analysis dashboard that captures keystroke dynamics (dwell time, flight time, rhythm) and uses Gemini AI to profile typing patterns and verify user identity consistency.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "display-capture"
+  ]
+}
