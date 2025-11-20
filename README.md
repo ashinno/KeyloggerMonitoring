@@ -1,34 +1,19 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img src="Interface.png" alt="SENTINEL // CORE interface" width="1200" />
 </div>
 
-# Run and deploy your AI Studio app
+# Keylogger Monitoring
 
-This contains everything you need to run your app locally.
+This project is a local research tool for observing typing behavior and related client signals to study keystroke biometrics, anomaly detection, and bot identification. It captures keyboard dynamics (timing and rhythm), tracks relevant context (such as the active window), and provides an interactive dashboard to visualize metrics and trust scoring. All analytics are performed locally to preserve privacy.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1cOAwuwKxnUgKGbACkH9ptySW34X2Fe3z
+## Purpose
 
-## Run Locally
+- Enable privacy-preserving analysis of human typing patterns and detection of abnormal or automated behavior
+- Support cybersecurity and UX research with transparent, local-only telemetry and encrypted audit logs
+- Provide a practical lab environment to experiment with biometric profiling and risk scoring without external data sharing
 
-**Prerequisites:**  Node.js
 
+## Notes
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-
-## Project Folders
-
-- `screenshots/`
-  - Location: project root
-  - Purpose: persistent storage for captured screenshots from the frontend
-  - Naming: `YYYY-MM-DD_HH-MM-SS.png` or `.jpg`; concurrent saves append `-N`
-
-- `logs/`
-  - Location: project root
-  - Purpose: backend application logs with daily rotation
-  - Files: `YYYY-MM-DD.log`, includes timestamp and severity per entry
-
-These directories are automatically created by the backend on startup. Screenshot saves are handled by the `POST /media/screenshot` endpoint, and logs are written via a daily rotating file handler.
+- Artifacts like screenshots and daily logs are created locally on startup and remain on your machine
+- Use responsibly and only with informed consent; the tooling is intended for research and defensive monitoring, not covert surveillance
